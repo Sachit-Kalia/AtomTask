@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/main" />
+
+    <ProgressBar
+        android:id="@+id/pgBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img1"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make meditation a habit you love"
+            android:textColor="#423E3E"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/heebo_extrabold"
+            android:scaleX="1.1"/>
+
+        <android.widget.Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_1"
+            android:text="Continue with Google"
+            android:height="70dp"
+            android:textColor="#656161"
+            android:textSize="19sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/heebo"
+            android:textScaleX="1.1"/>
+
+        <android.widget.Button
+            android:id="@+id/btnGuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_1"
+            android:text="Continue As Guest"
+            android:layout_marginTop="6dp"
+            android:height="70dp"
+            android:textColor="#656161"
+            android:textSize="19sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/heebo"
+            android:textScaleX="1.1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tnc"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#989595"
+            android:fontFamily="@font/heebo"
+            android:textScaleX="1.05"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
